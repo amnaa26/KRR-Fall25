@@ -1,0 +1,856 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#classifiedAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#classifiedAs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SurgicalWound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SurgicalClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#hasCause -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#hasCause">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cause"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#hasHealingStage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#hasHealingStage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#HealingStage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#hasSymptom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#involvesBodyPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#involvesBodyPart">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#BodyPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#mayLeadTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#mayLeadTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Complication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#requiresMedicalAttention -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#requiresMedicalAttention">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#treatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#treatedWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#bleedingAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#bleedingAmount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#hasDepth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#hasDepth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#hasLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#hasLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#riskLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#riskLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#severityLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#severityLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#treatmentDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#treatmentDuration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#bleedingAmount"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Abrasion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Abrasion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#OpenWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Accident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Accident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Antibiotics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Antibiotics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#MedicalTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Avulsion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Avulsion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#OpenWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Bandage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Bandage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#HomeTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Bite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Bite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Bleeding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Bleeding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#BodyPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#BodyPart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Bone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Bone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cause -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cause"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cellulitis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cellulitis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Infection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#CleanContaminatedWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#CleanContaminatedWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SurgicalWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#CleanWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#CleanWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SurgicalWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cleaning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cleaning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#HomeTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#ClosedWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#ClosedWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#OpenWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#ClotFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#ClotFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#HealingStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Complication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Complication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#ContaminatedWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#ContaminatedWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SurgicalWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Contusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Contusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#ClosedWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#DirtyContaminatedWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#DirtyContaminatedWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SurgicalWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Fall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Fall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Fever -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Fever">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#FoulOdor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#FoulOdor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Gangrene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Gangrene">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Infection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#GranulationTissue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#GranulationTissue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#HealingStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Gunshot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Gunshot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#HealingStage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#HealingStage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Hematoma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Hematoma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#ClosedWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Hemorrhage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Hemorrhage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Complication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#HomeTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#HomeTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#IceApplication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#IceApplication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#HomeTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Infection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Infection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Complication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#InternalOrgan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#InternalOrgan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Joint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Joint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Laceration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Laceration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#OpenWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#LossOfFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#LossOfFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Complication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#MedicalTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#MedicalTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Muscle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Muscle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#NecrotizingFasciitis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#NecrotizingFasciitis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Complication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#NerveDamage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#NerveDamage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Complication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#OpenWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#OpenWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#OrganDamage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#OrganDamage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Complication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Pain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Pain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Puncture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Puncture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#OpenWound"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#requiresMedicalAttention"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#TetanusShot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#PusDischarge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#PusDischarge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Redness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Redness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Rest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Rest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#HomeTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#ScabFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#ScabFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#HealingStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#ScarFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#ScarFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#HealingStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Sepsis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Sepsis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Complication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SharpObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SharpObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Skin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Skin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SkinGlue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SkinGlue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#MedicalTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Staples -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Staples">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#MedicalTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Surgery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Surgery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#MedicalTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SurgicalClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SurgicalClass"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SurgicalWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SurgicalWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Sutures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Sutures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#MedicalTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Swelling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Swelling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Symptom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Tetanus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Tetanus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Infection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#TetanusShot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#TetanusShot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#MedicalTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Tissue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Tissue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Treatment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Twisting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Twisting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Wound">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#hasCause"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Cause"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#antibiotics1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#antibiotics1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#bandage1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#bandage1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Bandage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#bleeding1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#bleeding1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Bleeding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#fall1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#fall1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Fall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#infection1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#infection1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Infection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#pain1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#pain1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Pain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#sepsis1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#sepsis1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Sepsis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#sharpObjects1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#sharpObjects1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#SharpObject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#sutures1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#sutures1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Sutures"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#swelling1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#swelling1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Swelling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#tetanusShot1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#tetanusShot1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#TetanusShot"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#wound1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#wound1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Laceration"/>
+        <untitled-ontology-2:hasCause rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#sharpObjects1"/>
+        <untitled-ontology-2:hasSymptom rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#bleeding1"/>
+        <untitled-ontology-2:mayLeadTo rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#infection1"/>
+        <untitled-ontology-2:treatedWith rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#sutures1"/>
+        <untitled-ontology-2:bleedingAmount>Severe</untitled-ontology-2:bleedingAmount>
+        <untitled-ontology-2:hasDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</untitled-ontology-2:hasDepth>
+        <untitled-ontology-2:hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</untitled-ontology-2:hasLength>
+        <untitled-ontology-2:severityLevel>moderate</untitled-ontology-2:severityLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#wound2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#wound2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Puncture"/>
+        <untitled-ontology-2:hasCause rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#sharpObjects1"/>
+        <untitled-ontology-2:hasSymptom rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#pain1"/>
+        <untitled-ontology-2:hasSymptom rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#swelling1"/>
+        <untitled-ontology-2:mayLeadTo rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#infection1"/>
+        <untitled-ontology-2:treatedWith rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#antibiotics1"/>
+        <untitled-ontology-2:treatedWith rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#tetanusShot1"/>
+        <untitled-ontology-2:bleedingAmount>moderate</untitled-ontology-2:bleedingAmount>
+        <untitled-ontology-2:hasDepth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</untitled-ontology-2:hasDepth>
+        <untitled-ontology-2:riskLevel>high</untitled-ontology-2:riskLevel>
+        <untitled-ontology-2:severityLevel>high</untitled-ontology-2:severityLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#wound3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#wound3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#Contusion"/>
+        <untitled-ontology-2:hasCause rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#fall1"/>
+        <untitled-ontology-2:hasSymptom rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#swelling1"/>
+        <untitled-ontology-2:treatedWith rdf:resource="http://www.semanticweb.org/amna/ontologies/2025/10/untitled-ontology-2#bandage1"/>
+        <untitled-ontology-2:severityLevel>low</untitled-ontology-2:severityLevel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
