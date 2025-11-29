@@ -1,0 +1,64 @@
+PREFIX nyc: <http://example.org/nyc/mayors/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+#Query1: Listing all mayors of New York city
+SELECT ?mayor ?name ?partyName
+WHERE{
+	?mayor rdf:type nyc:Mayor.
+	?mayor nyc:hasName ?name.
+	?mayor nyc:hasPoliticalParty ?party.
+	?party nyc:hasName ?partyName.
+	?mayor nyc:governsCity nyc:NewYorkCity.
+}
+
+#Query2: Mayors who started after 2010 and age > 50
+SELECT ?mayor ?name ?startDate ?ageAtStart ?partyName
+WHERE{
+	?mayor rdf:type nyc:Mayor.
+	?mayor nyc:hasName ?name.
+	?mayor nyc:hasPoliticalParty ?party.
+	?party nyc:hasName ?partyName.	
+	?mayor nyc:servedTerm ?term.
+	?term nyc:startDate ?startDate.
+	?mayor nyc:ageAtStart ?ageAtStart.
+	FILTER(?startDate > "2010-01-01"^^xsd:date && ?ageAtStart > 50)
+}
+
+#Query3: Mayors with their predecessors and successors
+SELECT ?mayor ?name ?predecessorName ?successorName
+WHERE{
+	?mayor rdf:type nyc:Mayor.
+	?mayor nyc:hasName ?name.
+	OPTIONAL{
+		?mayor nyc:precededBy ?predecessor.
+		?predecessor nyc:hasName ?predecessorName.
+	}
+	OPTIONAL{
+		?mayor nyc:succeededBy ?successor.
+		?successor nyc:hasName ?successorName.
+	}
+}
+
+#Query4: Counting mayors per political party
+SELECT ?partyName (COUNT(?mayor) AS ?count)
+WHERE{
+	?mayor rdf:type nyc:Mayor.
+	?mayor nyc:hasPoliticalParty ?party.
+	?party nyc:hasName ?partyName.
+}
+GROUP BY ?partyName
+
+#Query5: Mayor -> Political Party -> Term Start
+SELECT ?mayorName ?partyName ?startDate
+WHERE {
+    ?mayor rdf:type nyc:Mayor .
+    ?mayor nyc:hasName ?mayorName .
+
+    ?mayor nyc:hasPoliticalParty ?party .
+    ?party nyc:hasName ?partyName .
+
+    ?mayor nyc:servedTerm ?term .
+    ?term nyc:startDate ?startDate .
+}
+ORDER BY ?startDate

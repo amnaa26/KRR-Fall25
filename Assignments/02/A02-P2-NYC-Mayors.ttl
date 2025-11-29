@@ -1,0 +1,81 @@
+@prefix nyc: <http://example.org/nyc/mayors/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nyc:Independent a nyc:PoliticalParty ;
+    nyc:hasName "Independent" .
+
+nyc:EricAdams a nyc:Mayor ;
+    nyc:ageAtStart 61 ;
+    nyc:birthDate "1960-09-01"^^xsd:date ;
+    nyc:birthPlace "Brooklyn, New York" ;
+    nyc:education "John Jay College" ;
+    nyc:governsCity nyc:NewYorkCity ;
+    nyc:hasName "Eric Adams" ;
+    nyc:hasPoliticalParty nyc:Democratic ;
+    nyc:numberOfTerms 1 ;
+    nyc:precededBy nyc:BilldeBlasio ;
+    nyc:servedTerm nyc:Term20220101_20251130 .
+
+nyc:RudyGiuliani a nyc:Mayor ;
+    nyc:ageAtStart 55 ;
+    nyc:birthDate "1944-05-28"^^xsd:date ;
+    nyc:birthPlace "Brooklyn, New York" ;
+    nyc:education "NYU, NYU Law" ;
+    nyc:governsCity nyc:NewYorkCity ;
+    nyc:hasName "Rudy Giuliani" ;
+    nyc:hasPoliticalParty nyc:Republican ;
+    nyc:numberOfTerms 2 ;
+    nyc:servedTerm nyc:Term20000101_20011231 ;
+    nyc:succeededBy nyc:MichaelBloomberg .
+
+nyc:Term20000101_20011231 a nyc:Term ;
+    nyc:endDate "2001-12-31"^^xsd:date ;
+    nyc:startDate "2000-01-01"^^xsd:date .
+
+nyc:Term20020101_20131231 a nyc:Term ;
+    nyc:endDate "2013-12-31"^^xsd:date ;
+    nyc:startDate "2002-01-01"^^xsd:date .
+
+nyc:Term20140101_20211231 a nyc:Term ;
+    nyc:endDate "2021-12-31"^^xsd:date ;
+    nyc:startDate "2014-01-01"^^xsd:date .
+
+nyc:Term20220101_20251130 a nyc:Term ;
+    nyc:endDate "2025-11-30"^^xsd:date ;
+    nyc:startDate "2022-01-01"^^xsd:date .
+
+nyc:BilldeBlasio a nyc:Mayor ;
+    nyc:ageAtStart 52 ;
+    nyc:birthDate "1961-05-08"^^xsd:date ;
+    nyc:birthPlace "New York City" ;
+    nyc:education "NYU, Columbia" ;
+    nyc:governsCity nyc:NewYorkCity ;
+    nyc:hasName "Bill de Blasio" ;
+    nyc:hasPoliticalParty nyc:Democratic ;
+    nyc:numberOfTerms 2 ;
+    nyc:precededBy nyc:MichaelBloomberg ;
+    nyc:servedTerm nyc:Term20140101_20211231 ;
+    nyc:succeededBy nyc:EricAdams .
+
+nyc:Democratic a nyc:PoliticalParty ;
+    nyc:hasName "Democratic" .
+
+nyc:MichaelBloomberg a nyc:Mayor ;
+    nyc:ageAtStart 59 ;
+    nyc:birthDate "1942-02-14"^^xsd:date ;
+    nyc:birthPlace "Boston, Massachusetts" ;
+    nyc:education "Johns Hopkins, Harvard" ;
+    nyc:governsCity nyc:NewYorkCity ;
+    nyc:hasName "Michael Bloomberg" ;
+    nyc:hasPoliticalParty nyc:Republican ;
+    nyc:numberOfTerms 3 ;
+    nyc:precededBy nyc:RudyGiuliani ;
+    nyc:servedTerm nyc:Term20020101_20131231 ;
+    nyc:succeededBy nyc:BilldeBlasio .
+
+nyc:Republican a nyc:PoliticalParty ;
+    nyc:hasName "Republican" .
+
+nyc:NewYorkCity a nyc:City ;
+    nyc:hasName "New York City" .
+
